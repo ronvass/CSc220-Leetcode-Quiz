@@ -1,7 +1,7 @@
 # CSc220-Leetcode-Quiz
 4/14/26 Quiz #3
 
-# Sorting Sprint Challenge
+# Sorting Quiz
 
 This repository contains my solutions for two linear-time sorting problems from our CSC 22000-P Algorithms sorting challenge. The objective was to solve both problems without using the library sort function and to explain how each solution achieves efficient runtime.
 
