@@ -1,17 +1,15 @@
-# CSc220-Leetcode-Quiz
+# CSc220-LeetCode-Quiz
 4/14/26 Quiz #3
 
-# Sorting Quiz
+This repository contains solutions for two LeetCode linear-time sorting problems from the CSC 220 Algorithms Quiz #3. The objective was to solve both problems without using the library sort function and to explain how each solution achieves efficient runtime.
 
-This repository contains my solutions for two linear-time sorting problems from our CSC 22000-P Algorithms sorting challenge. The objective was to solve both problems without using the library sort function and to explain how each solution achieves efficient runtime.
-
-## Problem 1: Sort Colors (LeetCode #75)
+## Problem 1: LeetCode #75: Sort Colors
 
 ### Algorithm Used
 **Counting Sort**
 
 ### Explanation
-The array only contains three possible values: `0`, `1`, and `2`. Because the range is so small, I count how many times each number appears and then rebuild the array in sorted order.
+The array only contains three possible values: `0`, `1`, and `2`. Because the range is so small, we count how many times each number appears and then rebuild the array in sorted order.
 
 ### Steps
 1. Create a count array of size 3
@@ -24,15 +22,15 @@ The array only contains three possible values: `0`, `1`, and `2`. Because the ra
 
 ---
 
-## Problem 2: Maximum Gap (LeetCode #164)
+## Problem 2: LeetCode #164: Maximum Gap
 
 ### Algorithm Used
 **Bucket Sort**
 
 ### Explanation
-The problem requires linear time, so using a normal sort is not allowed. Instead, I divide the number range into buckets. Each bucket keeps track of only its minimum and maximum value.
+The problem requires linear time, so using a normal sort is not allowed. Instead, we divide the number range into buckets. Each bucket keeps track of only its minimum and maximum value.
 
-The maximum gap must appear between two non-empty buckets, so after filling the buckets, I scan through them and compare the minimum of the current bucket with the maximum of the previous non-empty bucket.
+The maximum gap must appear between two non-empty buckets, so after filling the buckets, we scan through them and compare the minimum of the current bucket with the maximum of the previous non-empty bucket.
 
 ### Steps
 1. Find the minimum and maximum values in the array
@@ -44,11 +42,3 @@ The maximum gap must appear between two non-empty buckets, so after filling the 
 ### Complexity
 - **Time:** O(n)
 - **Space:** O(n)
-
----
-
-## What I Learned
-This challenge helped me understand when linear-time sorting methods are useful. Counting Sort works well when the value range is very small, while Bucket Sort is useful when we want to organize values by range and avoid full sorting.
-
-## Course Context
-These problems were part of a class activity focused on applying **Counting Sort** and **Bucket Sort** to real interview-style LeetCode questions and explaining the logic clearly in a short demo.
