@@ -1,7 +1,8 @@
 # CSc220-LeetCode-Quiz
+
 4/14/26 Quiz #3
 
-This repository contains solutions for two LeetCode linear-time sorting problems from the CSC 220 Algorithms Quiz #3. The objective was to solve both problems without using the library sort function and to explain how each solution achieves efficient runtime.
+This repository contains solutions LeetCode problems from the CSC 220 Algorithms Quizzes. The objective was to solve the problems, some with restrictions on using the library sort function and to explain how each solution achieves efficient runtime.
 
 ## Problem 1: LeetCode #75: Sort Colors
 
@@ -41,4 +42,14 @@ The maximum gap must appear between two non-empty buckets, so after filling the 
 
 ### Complexity
 - **Time:** O(n)
-- **Space:** O(n)
+
+---
+
+4/23/26 Quiz #4
+
+## Problem 1: LeetCode #416: Partition Equal Subset Sum
+**Knapsack, Subset Sum**
+
+### Complexity
+O(n * target)
+n is the number of elements, target is total/2 which at worst is (200 × 100)/2 = 10,000.
